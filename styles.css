@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-margin-top: 130px;
+  scroll-behavior: smooth;
+}
+body {
+  height: 550vh;
+}
+/* Custom navbar */
+nav {
+  display: flex;
+  padding: 20px 100px 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0; /*Cho thằng này gắn lên trên, không thì bị dính vop nhau*/
+  width: 100vw; /*Kéo dãn các phần tử, không là bị dính chùm lại */
+  background-color: rgb(45, 44, 44);
+  z-index: 100;
+}
+/* Custom logo của navbar */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 300ms;
+  color: white;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  transition: 300ms;
+}
+.logo a:hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+.logo img {
+  height: 50px;
+}
+.logo img:hover {
+  cursor: pointer;
+}
+/* Custom navlinks */
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  transition: 300ms;
+}
+.navlinks .home:hover,
+.navlinks .products:hover,
+.navlinks .membership:hover,
+.navlinks .about:hover {
+  border-radius: 30px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+}
+/* Custome button trong navlinks */
+.navlinks button {
+  font-size: 18px;
+  padding: 5px 15px;
+  border: none;
+  background-color: white;
+  color: rgb(77, 76, 76);
+  border-radius: 30px;
+  transition: 300ms;
+}
+.navlinks button:hover {
+  font-size: 21px;
+  opacity: 80%;
+  cursor: pointer;
+}
+/* Custom phần main của webstie */
+/* Custom section 1 cửa web */
+/* Custom chữ cho section 1 */
+#home {
+  display: flex;
+  margin: 125px 110px;
+}
+.content-home h3 {
+  color: rgba(36, 36, 36, 0.793);
+  font-size: 24px;
+}
+.content-home h1 {
+  font-size: 65px;
+}
+.content-home span {
+  font-size: 65px;
+  font-weight: 700;
+}
+.content-home p {
+  width: 50ch;
+  color: #555;
+  line-height: 1.5;
+  letter-spacing: 1.5;
+}
+/* Custom button của website */
+.content-home .show {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(77, 76, 76);
+  border-radius: 10px;
+  transition: 300ms;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.8));
+}
+.content-home .show:hover {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(77, 76, 76);
+  background-color: white;
+}
+.content-home a {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  color: rgb(77, 76, 76);
+  background-color: white;
+  border-radius: 10px;
+  transition: 300ms;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.8));
+  margin-left: 20px;
+  text-decoration: none;
+}
+.content-home a:hover {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(77, 76, 76);
+  cursor: pointer;
+}
+/* Chỉnh ảnh */
+.img img {
+  height: 350px;
+  /* border: 2px solid black; */
+  margin-left: 40px;
+}
+/* Custom section 2 của web */
+/* Đoạn 1  */
+#about {
+  margin-top: 200px;
+  display: flex;
+  margin: 125px 110px;
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+.content-about hr {
+  width: 30%;
+  height: 4px;
+  background-color: rgb(77, 76, 76);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-about p {
+  margin-top: 40px;
+  width: 40ch;
+  text-align: center;
+  line-height: 1.5;
+  color: #555;
+}
+/* Đoạn 2 */
+.content-about .title {
+  margin-top: 30px;
+}
+.content-about li {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 17px;
+}
+.content-about span {
+  font-weight: 700;
+}
+/* Custom hình */
+.img-about img {
+  height: 400px;
+  margin-left: 250px;
+  border-radius: 50%;
+}
+/* Thêm background cho hình */
+.img-about {
+  position: relative;
+}
+.img-about .background-img {
+  height: 450px;
+  width: 420px;
+  background-color: rgb(255, 231, 200);
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  border-radius: 50%;
+  z-index: -999;
+}
+/* Custom section 3 của website */
+#products {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid black;  */
+  margin: 125px 110px;
+  /* căn giữa chữ Our Products*/
+}
+#products hr {
+  width: 5%;
+  height: 4px;
+  background-color: rgb(77, 76, 76);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Custom khối chứa hình, tên và giá sản phẩm */
+.content-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* border: 2px solid black; */
+}
+.products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 2px solid black;  */
+}
+/* Chỉnh hình */
+.card-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.card-img img {
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+/* Chỉnh chữ */
+.products-card h1 {
+  font-size: 20px;
+  width: 25ch;
+}
+.products-card h2 {
+  color: #555;
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* Chỉnh giá */
+.products-card .price {
+  font-weight: 700;
+  margin-top: 5px;
+}
+.products-card sup {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.card-img img:hover {
+  cursor: pointer;
+}
+/* Custom section 4  */
+/* Custom tiêu đề với hr */
+#membership {
+  display: flex;
+  /* align-items: center; 
+  justify-content: center; */
+  flex-direction: column;
+  /* border: 2px solid black; */
+}
+.title-membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+#membership .title-membership hr {
+  width: 8%;
+  height: 4px;
+  background-color: rgb(77, 76, 76);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* container chứa bảng giá */
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* Custom bảng giá trong container */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 8rem; */
+  margin-top: 4rem;
+  /* border: 2px solid black; */
+  background-color: rgb(77, 76, 76);
+  padding: 1.5rem 2.5rem;
+  border-radius: 30px;
+  height: 35rem;
+}
+.pricing-card h3 {
+  font-size: 1.625rem;
+  color: white; 
+}
+.pricing-card p {
+  font-size: 20px;
+  width: 20ch;
+  color: white;
+}
+.pricing-card span {
+  font-weight: 700;
+  color: white;
+  font-size: 3.5rem;
+}
+.pricing-card sup {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.pricing-card ul{
+  list-style: none;
+}
+.pricing-card li {
+  margin-top: 0.6rem;
+  list-style: none;
+  width: 25ch;
+  font-size: 20px;
+  color: white;
+}
+/* Custom nút của bảng giá */
+.pricing-card button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 600;
+  transition: 300ms;
+  border: none;
+}
+.pricing-card button:not(.tier-1):hover {
+  cursor: pointer;
+  opacity: 80%;
+  font-size: 1.1rem;
+  padding: 0.6rem;
+}
+.pricing-card .tier-1 {
+  background-color: rgb(77, 76, 76);
+  color:#8d8b8b;
+  border: 1px solid #8d8b8b ;
+}
+.pricing-card .tier-1:hover {
+  cursor: not-allowed;
+}
