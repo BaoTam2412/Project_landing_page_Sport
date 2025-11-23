@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 body {
-  height: 550vh;
+  height: 560vh;
 }
 /* Custom navbar */
 nav {
@@ -371,4 +371,107 @@ nav {
 }
 .pricing-card .tier-1:hover {
   cursor: not-allowed;
+}
+/* Custom thằng contact */
+/* Title contact us */
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 8rem;
+  /* align-items: center; */
+  /* border: 2px solid black; */
+}
+.title-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-contact hr {
+  width: 5%;
+  height: 4px;
+  background-color: rgb(77, 76, 76);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Nội dung của thằng contact us */
+.contact-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.contact-container .information {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  border-radius: 30px;
+  justify-content: space-evenly; 
+  gap: 1.5rem;
+}
+.contact-container .information p {
+  color: black;
+  font-size: 1rem;
+}
+/* Phần nhập thông tin input */
+.input-infor label {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.input-infor label input {
+  width: 60ch;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  border: 0.1px solid #c5c4c4;
+}
+.input-infor label textarea {
+  height: 5rem;
+  border: none;
+  border: 0.1px solid #c5c4c4;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.input-infor label input:focus, .input-infor label textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+/* Custom nút của phần contact */
+.input-infor button {
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(77, 76, 76);
+  border-radius: 20px;
+  transition: 300ms;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.8));
+}
+.input-infor button:hover {
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(77, 76, 76);
+  background-color: white;
+}
+/* Custom footer của website */
+footer {
+  background-color:rgb(45, 44, 44);
+}
+.footer-container {
+  display: flex;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  height: 4.3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright, .privacy {
+  color: white;
+  transition: 300ms;
+}
+.copyright:hover, .privacy:hover {
+  cursor: pointer;
+  color: #1C92D8;
 }
