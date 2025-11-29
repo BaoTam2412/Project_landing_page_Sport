@@ -583,4 +583,45 @@ footer {
     width: 17rem;
     top: 10px;
   }
+  /* Custom Products */
+  #products {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  #products hr {
+    width: 40%;
+  }
+  .products-card h1 {
+    font-size: 1.2rem;
+  }
+  /* Custom membership */
+  .pricing-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .pricing-card {
+    padding: 1.5rem 1.5rem;
+    margin-top: 1rem;
+  }
+  .pricing-card p {
+    font-size: 1rem;
+  }
+  /* Custom membership */
+  #membership {
+    margin-top: 0px;
+  }
+  #membership .title-membership hr {
+    width: 30%;
+    height: 4px;
+    background-color: rgb(77, 76, 76);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing-card li {
+    font-size: 18px;
+    width: 25ch;
+    margin-top: 1rem;
+  }
+  /* Custom contact us */
 }
