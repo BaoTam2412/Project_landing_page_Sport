@@ -464,13 +464,17 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.copyright, .privacy {
+.copyright,
+.privacy,
+.author {
   color: white;
   transition: 300ms;
 }
-.copyright:hover, .privacy:hover {
+.copyright:hover,
+.privacy:hover,
+.author:hover {
   cursor: pointer;
-  color: #1C92D8;
+  color: #1c92d8;
 }
 /* Responsive website */
 @media (max-width: 640px) {
@@ -657,3 +661,4 @@ footer {
     -webkit-tap-highlight-color: transparent;
   }
 }
+
