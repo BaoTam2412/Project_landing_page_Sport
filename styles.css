@@ -477,6 +477,119 @@ footer {
   color: #1c92d8;
 }
 /* Responsive website */
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  nav {
+    padding: 20px 50px;
+    width: 100%;
+  }
+  #home, #about, #products, #membership {
+    margin: 8rem 4rem;
+  }
+
+  .content-home h1, .content-home span {
+    font-size: 50px;
+  }
+  .img img {
+    height: 300px;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+    width: 30%;
+  }
+  .pricing-card span {
+    font-size: 2.5rem;
+  }
+
+  #contact {
+    margin: 4rem;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  nav {
+    padding: 15px 30px;
+    width: 100%;
+  }
+  .navlinks {
+    width: 60%;
+    gap: 10px;
+  }
+  .navlinks a {
+    font-size: 16px;
+  }
+
+  #home {
+    margin: 8rem 3rem;
+    align-items: center;
+  }
+  .content-home h1 {
+    font-size: 45px;
+  }
+  .content-home span {
+    font-size: 45px;
+  }
+  .content-home p {
+    width: 100%;
+  }
+  .img img {
+    height: 250px;
+    margin-left: 0;
+  }
+
+  #about {
+    margin: 6rem 3rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content-about {
+    align-items: center;
+  }
+  .content-about p {
+    width: 90%;
+  }
+  .img-about img {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .img-about .background-img {
+    right: -22px;
+  }
+
+  #products {
+    margin: 6rem 3rem;
+  }
+  .content-products {
+    gap: 15px;
+  }
+  .products-card {
+    width: 45%;
+  }
+
+  .pricing-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .pricing-card {
+    width: 48%;
+    margin-top: 2rem;
+    height: auto;
+  }
+  #contact {
+    margin: 6rem 3rem;
+    flex-direction: column;
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .input-infor label input,
+  .input-infor label textarea {
+    width: 100%;
+  }
+}
+/* Mobile */
 @media (max-width: 640px) {
   /* Custom thằng navbar trước */
   /* Chỉnh logo cho nhỏ lại */
@@ -648,7 +761,7 @@ footer {
   }
   .input-infor form label input,
   .input-infor form label textarea {
-    width: 38ch;
+    width: 40ch;
   }
   /* Custom footer */
   .footer-container {
@@ -665,4 +778,3 @@ footer {
     -webkit-tap-highlight-color: transparent;
   }
 }
-
