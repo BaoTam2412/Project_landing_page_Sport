@@ -555,6 +555,32 @@ footer {
   }
   /* Custom thằng about us */
   #about {
-    /* flex-direction: column-reverse; */
+    margin: 8rem 1.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content-about {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .content-about hr {
+    margin-right: 8rem;
+  }
+  .content-about p {
+    text-align: left;
+    margin-top: 1rem;
+    width: 30ch;
+    line-height: 1.8;
+  }
+  /* Custom hình */
+  .img-about img {
+    margin-left: auto;
+    height: 15rem;
+    margin-top: 2rem;
+  }
+  .img-about .background-img {
+    height: 18rem;
+    width: 17rem;
+    top: 10px;
   }
 }
