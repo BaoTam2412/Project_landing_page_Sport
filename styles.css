@@ -499,8 +499,9 @@ footer {
     gap: 1.1rem;
   }
   .navlinks {
-    gap: 3rem;
-    margin-right: 10rem;
+    gap: 1.3rem;
+    margin-right: 8rem;
+    font-size: 1rem;
   }
   .navlinks button {
     display: none;
@@ -521,7 +522,7 @@ footer {
   /* Custom thằng main */
   /* Custom thằng home */
   #home {
-    margin: 10.5rem 3rem;
+    margin: 10.5rem 1.5rem;
     flex-direction: column;
   }
   .content-home h3 {
@@ -529,14 +530,14 @@ footer {
     font-size: 1.5rem;
   }
   .content-home h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .content-home span {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   .content-home p {
-    width: 50ch;
+    width: 30ch;
     color: #555;
     line-height: 1.5;
     letter-spacing: 1.5;
@@ -549,7 +550,7 @@ footer {
     font-size: 18px;
   }
   .img img {
-    height: 17rem;
+    height: 12rem;
     margin-top: 30px;
   }
   /* Custom thằng about us */
