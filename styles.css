@@ -477,35 +477,7 @@ footer {
   color: #1c92d8;
 }
 /* Responsive website */
-/* Laptop */
-@media (min-width: 1025px) and (max-width: 1366px) {
-  nav {
-    padding: 20px 50px;
-    width: 100%;
-  }
-  #home, #about, #products, #membership {
-    margin: 8rem 4rem;
-  }
-
-  .content-home h1, .content-home span {
-    font-size: 50px;
-  }
-  .img img {
-    height: 300px;
-  }
-
-  .pricing-card {
-    padding: 1.5rem;
-    width: 30%;
-  }
-  .pricing-card span {
-    font-size: 2.5rem;
-  }
-
-  #contact {
-    margin: 4rem;
-  }
-}
+/* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
   nav {
     padding: 15px 30px;
