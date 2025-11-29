@@ -624,4 +624,29 @@ footer {
     margin-top: 1rem;
   }
   /* Custom contact us */
+  #contact {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .title-contact hr {
+    width: 15%;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .input-infor {
+    margin-top: 2rem;
+  }
+  .input-infor form label input, .input-infor form label textarea {
+    width: 40ch;
+  }
+  /* Custom footer */
+  .footer-container {
+    width: 95%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 14px;
+    text-align: center;
+  }
 }
+
