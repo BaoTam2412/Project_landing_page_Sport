@@ -475,3 +475,85 @@ footer {
   cursor: pointer;
   color: #1C92D8;
 }
+/* Responsive website */
+@media (max-width: 640px) {
+  /* Custom thằng navbar trước */
+  /* Chỉnh logo cho nhỏ lại */
+  * {
+    scroll-margin-top: 170px;
+  }
+  .logo img {
+    height: 2rem;
+  }
+  .logo a {
+    font-size: 1.3rem;
+  }
+  .logo a:hover {
+    font-size: 1.5rem;
+  }
+  /* nav-links */
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.1rem;
+  }
+  .navlinks {
+    gap: 3rem;
+    margin-right: 10rem;
+  }
+  .navlinks button {
+    display: none;
+  }
+  .navlinks .about {
+    padding: 5px 10px;
+  }
+  .navlinks .home:hover,
+  .navlinks .products:hover,
+  .navlinks .membership:hover,
+  .navlinks .about:hover {
+    border-radius: 30px;
+    background-color: white;
+    padding: 0.6rem;
+    color: black;
+    font-size: 1rem;
+  }
+  /* Custom thằng main */
+  /* Custom thằng home */
+  #home {
+    margin: 10.5rem 3rem;
+    flex-direction: column;
+  }
+  .content-home h3 {
+    color: rgba(36, 36, 36, 0.793);
+    font-size: 1.5rem;
+  }
+  .content-home h1 {
+    font-size: 3rem;
+  }
+  .content-home span {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .content-home p {
+    width: 50ch;
+    color: #555;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+  }
+  .content-home .show, .content-home a {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .content-home .show:hover, .content-home a:hover {
+    font-size: 18px;
+  }
+  .img img {
+    height: 17rem;
+    margin-top: 30px;
+  }
+  /* Custom thằng about us */
+  #about {
+    /* flex-direction: column-reverse; */
+  }
+}
