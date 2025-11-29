@@ -648,7 +648,7 @@ footer {
   }
   .input-infor form label input,
   .input-infor form label textarea {
-    width: 40ch;
+    width: 38ch;
   }
   /* Custom footer */
   .footer-container {
@@ -665,3 +665,4 @@ footer {
     -webkit-tap-highlight-color: transparent;
   }
 }
+
